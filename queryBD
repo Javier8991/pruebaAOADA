@@ -1,0 +1,52 @@
+/*creación de BD */
+create database ProjectPrueba1
+
+/*usar BD creada*/
+USE ProjectPrueba1;
+
+/*creación de tablas*/
+Create table Usuarios(
+ ID_usuario INT Primary Key, 
+ nombre NVARCHAR(50),
+ apellido_paterno NVARCHAR (50),
+ apellido_materno NVARCHAR (50),
+ contraseña_hash VARBINARY (MAX), /*para poder encriptarse */
+ rol NVARCHAR (50), 
+ )
+
+ Create table Director(
+ ID_usuario INT Primary Key, 
+ numero_empleado NVARCHAR(50),
+ ID_instituto INT,
+
+ )
+
+ Create table Docente(
+ ID_usuario INT Primary Key, 
+ numero_docente NVARCHAR(50),
+ ID_instituto INT,
+ )
+
+ Create table Alumno(
+ ID_usuario INT Primary Key, 
+ matricula NVARCHAR(50), 
+ ID_instituto INT,
+ )
+
+ Create table Asignatura(
+ ID_asignatura INT Primary Key, 
+ nombre NVARCHAR(50),
+ ID_instituto INT,
+ abreviacion NVARCHAR (50),
+ )
+
+  Create table Instituto(
+ ID_instituto INT Primary Key, 
+ nombre NVARCHAR(50),
+ calle NVARCHAR (50),
+ numero NVARCHAR (50),
+ municipio NVARCHAR (50),
+ CP NVARCHAR (50),
+ estado NVARCHAR (50),
+ pais NVARCHAR (50), 
+ )
