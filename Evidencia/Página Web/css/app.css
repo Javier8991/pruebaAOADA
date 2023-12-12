@@ -1,0 +1,141 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem =10px*/
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+body {
+    font-family: 'Asap', sans-serif;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 1.1rem;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+h1, h2, h3, h4{
+    line-height: 1.2;
+
+}
+.contenedor{
+    width: 100%;
+}
+
+.navegacion{
+    background-color: #800101;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 40% 10% 50%;
+    width: 100%;
+    padding: 2rem;
+   
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+   margin-left: 3rem;
+}
+.img_header{
+    margin-left: 2rem;
+    width: 2rem;
+}
+.logo{
+    background-color: #EAE3D8;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+.logo img{
+    height: 10rem;
+    margin:1.5rem 0 1rem 5rem;
+}
+.encabezado{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 30px;
+    color: #282828;
+}
+
+/*acceso*/
+.title{
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: 4rem;
+    color: #333333;
+    margin-top: 5rem;
+}
+.section_title{
+    display: flex;
+    justify-content: center;
+}
+.section_title img{
+    margin-top: 3rem;
+    height: 6rem;
+}
+.buttons_auth{
+    display: grid;
+    grid-template-rows: 1fr;
+   
+}
+.button_auth{
+    width: 20%;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #fff;
+    background-color: #800101;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0;
+}   
+.formulario{
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 40rem;
+    margin: 0 auto 10rem;
+    padding: 6rem;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.formulario input{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.formulario button{
+    background-color: #841816;
+    text-transform: uppercase;
+    color: #EAE3D8;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 0;
+    font-size: 1.8rem;
+
+}

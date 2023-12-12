@@ -6,7 +6,7 @@ CREATE TABLE instituto (
 
 CREATE TABLE rol (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR NOT NULL
+    nombre VARCHAR(60) NOT NULL
 );
 
 create table director(
@@ -97,3 +97,10 @@ CREATE TABLE alumno(
     FOREIGN KEY (asignatura_ID) 
     REFERENCES asignatura (id)
     );
+
+    INSERT INTO rol (nombre) values("director"),("docente"), ("alumno");
+    INSERT INTO instituto (nombre, domicilio) values
+("Instituto de Ciencias Básicas e Ingeniería", "Carretera Pachuca-Tulancingo Km. 4.5, Colonia Carboneras, Mineral de la Reforma, Hidalgo, C.P. 42184"),
+("Instituto de Ciencias de la Salud", "Carretera Pachuca-Actopan camino a Tilcuautla s/n Pueblo San Juan Tilcuautla, 42160 Hgo."),
+("Instituto de Ciencias Económico Administrativas", " Exhacienda de la Concepción s/n, Pueblo San Juan Tilcuautla, 42160 La Concepción, Hgo."),
+("Instituto de Ciencias Sociales y Humanidades", "Carretera Pachuca-Actopan Km. 4.5 s/n, San Cayetano el Bordo, 42084 Pachuca de Soto, Hgo.");
