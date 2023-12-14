@@ -128,7 +128,7 @@ h1, h2, h3, h4{
     box-sizing: border-box;
     font-size: 17px;
 }
-.formulario button{
+.button{
     background-color: #841816;
     text-transform: uppercase;
     color: #EAE3D8;
@@ -138,4 +138,47 @@ h1, h2, h3, h4{
     border: 0;
     font-size: 1.8rem;
 
+}
+.register{
+    margin-top: 3rem;
+    color: #841816;
+    font-size: 1.8rem;
+    background-color: transparent;
+    outline: none;
+   
+}
+.formulario_regist{
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 6rem;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.two_columns{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin: 2rem;
+    text-align: start;
+    
+}
+.two_columns input, select{
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+    border: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+.two_columns label{
+    color: #575756;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+#registrarse{
+    color: #800101;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
